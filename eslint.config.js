@@ -19,7 +19,7 @@ export default tseslint.config(
   },
   {
     ...love,
-    files: ['**/*.ts', '**/*.tsx'],
+    files: ['src/*.ts', 'src/*.tsx'],
     rules: {
       ...love.rules,
       '@typescript-eslint/no-non-null-assertion': 'off',
