@@ -1,3 +1,4 @@
+import { Chatbot } from './components/Chatbot'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Matches } from './components/Matches'
@@ -9,7 +10,7 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <Matches />
-        hello furia
+        <Chatbot />
       </main>
     </div>
   )
