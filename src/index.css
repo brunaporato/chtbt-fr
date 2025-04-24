@@ -3,3 +3,25 @@
 @theme {
   --default-font-family: "Helvetica";
 }
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background: rgba(21, 21, 22, 0.1);
+    border-radius: 999px;
+    /* border: 1px solid #585858; */
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #212122;
+    border-radius: 999px;
+    border: 1px solid #585858;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #2a2a2b;
+  }
+}
