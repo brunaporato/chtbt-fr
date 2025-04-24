@@ -6,7 +6,7 @@ export function Header() {
   const isMobile = useMobile()
 
   return (
-    <header className="py-5 px-4 flex justify-between items-center sticky top-0 border-b border-b-slate-100">
+    <header className="py-5 px-4 flex justify-between items-center sticky top-0 border-b bg-zinc-50 border-b-slate-200 z-20">
       {isMobile && (
         <button type="button" className="md:hidden cursor-pointer">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
