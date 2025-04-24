@@ -1,12 +1,14 @@
 import { Header } from './components/Header'
+import { Hero } from './components/Hero'
 
 function App() {
   return (
     <div>
       <Header />
-      <h1 className="text-slate-950 font-extrabold">
+      <main className="flex-grow">
+        <Hero />
         hello furia
-      </h1>
+      </main>
     </div>
   )
 }
