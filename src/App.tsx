@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Matches } from './components/Matches'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Matches />
         hello furia
       </main>
     </div>
