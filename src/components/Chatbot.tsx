@@ -1,6 +1,7 @@
 import { intents } from '@/data/intents'
 import type { Message } from '@/types/message'
 import { PaperPlaneRight } from '@phosphor-icons/react'
+// import OpenAI from 'openai'
 import { useEffect, useRef, useState } from 'react'
 
 const initialMessage: Message[] = [
@@ -26,6 +27,27 @@ export function Chatbot() {
   const [input, setInput] = useState('')
   const messagesEndRef = useRef<HTMLDivElement>(null)
 
+  // Exemplo de integração com OpenAI
+  //
+  // const openAi = new OpenAI({
+  //   apiKey: 'EXAMPLE_KEY',
+  //   dangerouslyAllowBrowser: true,
+  // })
+
+  // async function sendMessage(message: string) {
+  //   const completion = await openAi.chat.completions.create({
+  //     model: 'gpt-3.5-turbo',
+  //     messages: [
+  //       {
+  //         role: 'user',
+  //         content: message,
+  //       },
+  //     ],
+  //   })
+
+  //   return completion.choices[0].message.content?.toString() || 'Desculpe, não consegui entender sua pergunta.'
+  // }
+
   function handleSendMessage(text: string = input) {
     if (!text.trim()) return
 
@@ -40,7 +62,7 @@ export function Chatbot() {
     setInput('')
     setIsTyping(true)
 
-    setTimeout(() => {
+    setTimeout(async () => {
       const botResponse = generateResponse(text)
       const botMessage: Message = {
         id: Date.now().toString(),
