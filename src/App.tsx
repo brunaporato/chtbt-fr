@@ -5,7 +5,7 @@ import { Matches } from './components/Matches'
 
 function App() {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <main className="flex-grow">
         <Hero />
