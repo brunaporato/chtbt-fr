@@ -1,14 +1,10 @@
 export const intents = [
   {
-    keywords: ['próximo jogo', 'próxima partida', 'quando a furia joga', 'jogo seguinte'],
+    keywords: ['próximo jogo', 'próxima partida', 'quando a furia joga', 'jogo seguinte', 'proximo jogo', 'proxima partida'],
     response: 'O próximo jogo da FURIA é contra a Natus Vincere, no dia 25 de abril às 18h (CEST), pela ESL Pro League.',
   },
   {
-    keywords: ['capitão', 'líder'],
-    response: 'O capitão da FURIA é o Andrei \'arT\' Piovezan, conhecido por seu estilo agressivo e pela liderança dentro do servidor.',
-  },
-  {
-    keywords: ['resultados', 'últimos campeonatos', 'último torneio', 'desempenho recente'],
+    keywords: ['resultados', 'últimos campeonatos', 'último torneio', 'desempenho recente', 'ultimo campeonato', 'ultimo torneio'],
     response: 'A FURIA chegou até a semifinal da IEM Katowice recentemente, perdendo para a FaZe Clan em uma série disputada por 2 a 1.',
   },
   {
@@ -28,15 +24,15 @@ export const intents = [
     response: 'O atual treinador da FURIA é guerri, peça fundamental na evolução do time ao longo dos anos.',
   },
   {
-    keywords: ['capitão', 'cap', 'líder'],
+    keywords: ['capitão', 'cap', 'líder', 'capitao', 'lider'],
     response: 'O capitão da FURIA é Andrei "arT" Piovezan. Ele voltou a liderar a equipe em novembro de 2023, após uma período em que Gabriel "FalleN" era o capitão.',
   },
   {
-    keywords: ['ranking', 'posição no ranking', 'hltv'],
+    keywords: ['ranking', 'posição no ranking', 'hltv', 'posicao'],
     response: 'Atualmente, a FURIA ocupa a 9ª posição no ranking mundial da HLTV.',
   },
   {
-    keywords: ['título', 'campeonato vencido', 'troféus'],
+    keywords: ['título', 'campeonato vencido', 'troféus', 'titulo', 'trofeus', 'venceu'],
     response: 'A FURIA venceu a DreamHack Open Anaheim 2020, CBCS Elite League 2021, entre outros títulos regionais e internacionais.',
   },
   {
@@ -44,7 +40,7 @@ export const intents = [
     response: 'Gabriel \'FalleN\' Toledo é o IGL e AWP do time, ícone do CS:GO brasileiro e uma lenda mundial no cenário competitivo.',
   },
   {
-    keywords: ['olá', 'oi', 'e aí', 'fala', 'bom dia', 'boa tarde', 'boa noite', 'opa'],
+    keywords: ['olá', 'oi', 'e aí', 'fala', 'bom dia', 'boa tarde', 'boa noite', 'opa', 'ola'],
     response: 'Fala, fã da FURIA! Como posso te ajudar hoje?',
   },
   {

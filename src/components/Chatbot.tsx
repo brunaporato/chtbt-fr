@@ -78,7 +78,7 @@ export function Chatbot() {
 
   function generateResponse(question: string) {
     const normalized = question.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-
+    
     for (const intent of intents) {
       if (intent.keywords.some(keyword => normalized.includes(keyword))) {
         return intent.response
@@ -93,7 +93,9 @@ export function Chatbot() {
   }
 
   useEffect(() => {
-    scrollToBottom()
+    if(messages.length > 1) {
+      scrollToBottom()
+    }
   }, [messages])
 
   return (
