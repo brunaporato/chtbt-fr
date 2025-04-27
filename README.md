@@ -74,5 +74,5 @@ Instalar as dependências e rodar o projeto
 - Banco de dados com partidas em tempo real
 - Histórico de mensagens no chat
 
-### 🖤 Feito com carinho por uma fã da FURIA
+### Feito com 🖤
 [brunaporato](https://linkedin.com/in/brunaporato)
