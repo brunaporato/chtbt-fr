@@ -22,7 +22,7 @@ export function MatchCard({ data }: MatchCardProps) {
         </div>
       )}
 
-      <div className="opacity-30">
+      <div className="opacity-30 max-h-48 xl:max-h-72 overflow-hidden">
         <img src={data.image} alt="Imagem de divulgação" />
       </div>
 

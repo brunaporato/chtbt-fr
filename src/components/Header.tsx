@@ -48,15 +48,15 @@ export function Header() {
               <nav>
                 <ul className="flex gap-3 items-center">
                   <li>
-                    <a href="#matches" className="text-zinc-900 hover:text-zinc-600 transition-colors duration-200 text-sm">
+                    <button onClick={() => handleCloseMenu("matches")} className="text-zinc-900 hover:text-zinc-600 transition-colors duration-200 text-sm cursor-pointer">
                       PARTIDAS
-                    </a>
+                    </button>
                   </li>
                   <div className="w-px h-3 bg-zinc-400" />
                   <li>
-                    <a href="#chatbot" className="text-zinc-900 hover:text-zinc-600 transition-colors duration-200 text-sm">
+                    <button onClick={() => handleCloseMenu("chatbot")} className="text-zinc-900 hover:text-zinc-600 transition-colors duration-200 text-sm cursor-pointer">
                       CHATBOT
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </nav>
@@ -66,9 +66,9 @@ export function Header() {
           <img src={furiaLogo} alt="Furia" />
         </a>
 
-        <a href="#chatbot">
+        <button className='flex items-center justify-end lg:w-40 cursor-pointer' onClick={() => handleCloseMenu("chatbot")}>
           <ChatCircleDots size={24} />
-        </a>
+        </button>
       </header>
 
       <nav className={`fixed inset-0 z-20 ${isMenuOpen ? 'bg-zinc-800/85' : 'bg-transparent pointer-events-none'} transition-colors duration-300 ease-in-out`}>
